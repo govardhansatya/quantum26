@@ -17,6 +17,19 @@ Run
 """
 
 from __future__ import annotations
+
+# Must be the very first Streamlit call
+import streamlit as st
+
+st.set_page_config(
+    page_title="Quantum Sarcasm Detector",
+    page_icon="⚛️",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+import io
+import os
 import sys
 import time
 import traceback
